@@ -1,172 +1,319 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haicheng Huang</title>
+  <meta name="author" content="Haicheng Huang">
+  <meta name="description" content="Haicheng Huang — Ph.D. student in IROM at The University of Texas at Austin, advised by Prof. Mingyuan Zhou.">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
 
-    <title>Haicheng Huang</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKGCMB0TLL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GKGCMB0TLL');
+  </script>
 
-    <meta name="author" content="Haicheng Huang">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <style>
+    :root {
+      --bg: #fbfaf8;
+      --surface: #ffffff;
+      --text: #1f2328;
+      --muted: #5b6470;
+      --faint: #8a929c;
+      --line: #e7e4df;
+      --accent: #bf5700;          /* UT burnt orange */
+      --accent-soft: #fbeee4;
+      --link: #1f5fa8;
+      --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111315;
+        --surface: #181b1e;
+        --text: #e8e6e3;
+        --muted: #a7adb4;
+        --faint: #7d848c;
+        --line: #2a2e33;
+        --accent: #f08a3c;
+        --accent-soft: #2b1f16;
+        --link: #7fb2ee;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 2px; }
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GKGCMB0TLL"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-GKGCMB0TLL');
-	</script>
-    
-  </head>
+    .wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 56px 24px 40px;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 56px;
+    }
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-				Haicheng Huang 黄海城
-                </p>
-				<p>
-                  I am a rising fourth-year undergraduate student at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>, majoring in Information Engineering.
-				  I'm currently a research assistant at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>, working with Prof. <a href="https://sunarker.github.io">Jiangchao Yao</a>.
-				  I was also fortunate to work with Prof. <a href="https://mingyuanzhou.github.io">Mingyuan Zhou</a> from <a href="https://www.utexas.edu">UT Austin</a> and mentor <a href="https://scholar.google.com/citations?hl=zh-CN&user=Vl5wCXsAAAAJ">Huangjie Zheng</a>during my undergraduate.        
-				</p>
-                <p style="text-align:center">
-                  <a href="hhcsd1@sjtu.edu.cn">Email</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/xiaofeixiang233">Github</a> &nbsp;/&nbsp;
-				  <a href="https://www.linkedin.com/in/海城-黄-84a27b339/">LinkedIn</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/haicheng.jpg"><img style="width:70%; object-fit: cover;" alt="profile photo" src="images/haicheng.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-			
-			<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-			  <tr>
-				<td style="padding:16px;width:100%;vertical-align:middle">
-				<h2>Research Interests</h2>
-				<p>
-				  My research interests lie in <b>generative models</b>, especially <b>diffusion models</b> and <b>representaion learning</b>. 
-				  I want to explore: <br><br>
-				  <b>(1) How can generative models, especially diffusion models and autoregressive models, achieve better and faster performance in various downstream tasks </b><br>
-				  <b>(2) How to use the synthetic data produced by the generative model or the learned representations to assist in the process of representation learning</b><br><br>
-				</p>
-				<p style="color: red;">
-				  I am currently seeking a Ph.D. opportunity for Fall 2026 in computer science!
-				</p>
-				</td>
-			  </tr>
-			</tbody></table>
+    /* ---------- Sidebar ---------- */
+    aside { position: sticky; top: 48px; align-self: start; text-align: left; }
+    .avatar {
+      width: 168px; height: 168px; border-radius: 50%;
+      object-fit: cover; display: block;
+      border: 4px solid var(--surface);
+      box-shadow: var(--shadow), 0 0 0 1px var(--line);
+      background: var(--line);
+    }
+    h1 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 30px; line-height: 1.2; margin: 22px 0 2px; font-weight: 600;
+    }
+    .cn { display: block; font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 17px; color: var(--muted); font-weight: 500; margin-top: 4px; }
+    .role { color: var(--muted); font-size: 14.5px; line-height: 1.5; margin: 8px 0 18px; }
+    .role b { color: var(--text); font-weight: 600; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .links a {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 13.5px; font-weight: 500; color: var(--text);
+      padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+      background: var(--surface);
+      transition: border-color .15s, color .15s;
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+    .links svg { width: 15px; height: 15px; fill: currentColor; }
 
-			<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-			  <tbody>
-				<tr>
-				  <td style="padding:20px;width:100%;vertical-align:middle">
-					<h2>News</h2>
-					<p>
-					  <b>[Sept. 2025]</b> <a href="https://arxiv.org/pdf/2507.18578">Wino</a> is accepted by NeurIPS 2025 Workshop. <br>
-					  <b>[Sept. 2025]</b> <a href="https://neurips.cc/virtual/2025/poster/116854">DAR-GDA</a> is accepted by NeurIPS 2025. <br>
-					  <b>[May. 2025]</b>  Start internship at<a href="https://cmic.sjtu.edu.cn/CN/Default.aspx">CMIC</a> at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> . <br>
-					  <b>[July. 2024]</b> Start remote internship at <a href="https://www.utexas.edu">UT Austin</a>. <br>
-					</p>
-				  </td>
-				</tr>
-			  </tbody>
-			</table>
+    /* ---------- Main ---------- */
+    main { min-width: 0; }
+    section { margin-bottom: 44px; }
+    h2 {
+      font-size: 13px; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--accent); font-weight: 700; margin: 0 0 16px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+    p { margin: 0 0 12px; }
+    .interests { margin: 14px 0 0; padding-left: 20px; }
+    .interests li { margin-bottom: 6px; }
 
-			<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-			  <tbody>
-				<tr>
-				  <td style="padding:16px;width:100%;vertical-align:middle">
-					<h2>Publications</h2>
-					<p>
-					  
-					</p>
-				  </td>
-				</tr>
-			  </tbody>
-			</table>
+    /* News */
+    .news { list-style: none; margin: 0; padding: 0; }
+    .news li {
+      display: grid; grid-template-columns: 92px 1fr; gap: 12px;
+      padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 15px;
+    }
+    .news li:last-child { border-bottom: 0; }
+    .news time { color: var(--faint); font-variant-numeric: tabular-nums; font-size: 14px; }
 
-			<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-			  <tbody>
-				<tr>
-				  <td style="padding:20px;width:25%;vertical-align:middle">
-					<img src='images/DAR.png' width="160">
-				  </td>
-				  <td style="padding:20px;width:75%;vertical-align:middle">
-					<papertitle>
-					  <strong><a href="https://neurips.cc/virtual/2025/poster/116854">Generative Data Augmentation via Diffusion
-						Distillation, Adversarial Alignment, and Importance
-						Reweighting</a></strong>
-					</papertitle>
-					<br>
-					<a href="https://ruyianry.github.io">Ruyi An</a>*,
-					<strong>Haicheng Huang</strong>*,
-					<a href="https://scholar.google.com/citations?user=Vl5wCXsAAAAJ&hl=zh-CN&oi=ao">Huangjie Zheng</a>,
-					<a href="https://mingyuanzhou.github.io">Mingyuan Zhou</a>
-					<br>
-					<em>NeurIPS</em>, 2025 &nbsp 
-					<br>
-					<a href="https://neurips.cc/virtual/2025/poster/116854">paper</a>
-					<p>
-						We propose DAR-GDA, a three-stage augmentation pipeline that unites model **D**istillation, **A**dversarial alignment, and importance **R**eweighting that makes diffusion-quality augmentation both fast and optimized for improving downstream learning outcomes.
-						Our approach not only surpasses conventional non-foundation-model GDA baselines but also remarkably matches or exceeds the GDA performance of large, web-pretrained text-to-image models, despite using solely in-domain data.
-					</p>
-				  </td>
-				</tr>
-		
-				  <td style="padding:20px;width:25%;vertical-align:middle">
-					<img src='images/wino.png' width="160">
-				  </td>
-				  <td style="padding:20px;width:75%;vertical-align:middle">
-					<papertitle>
-					  <strong><a href="https://arxiv.org/pdf/2507.18578">Wide-In, Narrow-Out: Revokable Decoding for Efficient and Effective DLLMs</a></strong>
-					</papertitle>
-					<br>
-					<a href="https://feng-hong.github.io/research/">Feng Hong</a>,
-					<a href="https://scholar.google.com/citations?hl=en&user=SNp2hXIAAAAJ">Geng YU</a>,
-					<a>Yushi Ye</a>,
-					<strong>Haicheng Huang</strong>,
-					<a href="https://scholar.google.com/citations?user=Vl5wCXsAAAAJ&hl=zh-CN&oi=ao">Huangjie Zheng</a>,
-					<a href="https://annzhanglion.github.io">Ya Zhang</a>,
-					<a>Yanfeng Wang</a>,
-					<a href="https://sunarker.github.io">Jiangchao Yao</a>
-					<br>
-					<em>In submission</em> &nbsp
-					<br>
-					<a href="https://arxiv.org/pdf/2507.18578">paper</a>
-					<p>
-						we introduce Wide-In, Narrow-Out (WINO), a training-free decoding algorithm that enables revokable decoding in DLLMs. 
-						WINO employs a parallel draft-and-verify mechanism, aggressively drafting multiple tokens while simultaneously using the model's bidirectional context to verify and re-mask suspicious ones for refinement.
-					</p>
-				  </td>
-				</tr>
-			  </tbody>
-			</table>
-						
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:0px">
-                    <br>
-                    <p style="text-align:right;font-size:small;">
-                      The website is built upon this <a href="https://github.com/jonbarron/jonbarron_website">template</a>.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+    /* Publications */
+    .note { color: var(--faint); font-size: 13.5px; margin: -6px 0 14px; }
+    .pub {
+      display: grid; grid-template-columns: 180px 1fr; gap: 20px;
+      padding: 18px; margin-bottom: 14px;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+    .thumb {
+      width: 180px; aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden;
+      background: var(--accent-soft); border: 1px solid var(--line);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .thumb img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+    .thumb .ph {
+      font-family: "Source Serif 4", Georgia, serif; font-weight: 600;
+      font-size: 30px; color: var(--accent); letter-spacing: .02em;
+    }
+    .pub-title { font-weight: 600; font-size: 16px; line-height: 1.4; margin-bottom: 4px; }
+    .pub-title a { color: var(--text); }
+    .pub-title a:hover { color: var(--link); }
+    .authors { font-size: 14.5px; color: var(--muted); margin-bottom: 6px; }
+    .authors .me { color: var(--text); font-weight: 600; }
+    .venue { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 8px; }
+    .badge {
+      font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px;
+      background: var(--accent-soft); color: var(--accent);
+    }
+    .badge.alt { background: transparent; color: var(--muted); border: 1px solid var(--line); font-weight: 500; }
+    .badge.hl { background: #fff4d6; color: #8a5a00; }
+    @media (prefers-color-scheme: dark) { .badge.hl { background: #3a2f12; color: #f3c860; } }
+    .pub-links { font-size: 13.5px; font-weight: 500; }
+    .pub-links a { margin-right: 12px; }
+    .tldr { font-size: 14px; color: var(--muted); margin: 8px 0 0; }
+
+    /* Lists */
+    .simple { list-style: none; padding: 0; margin: 0; }
+    .simple li {
+      display: flex; justify-content: space-between; gap: 16px;
+      padding: 6px 0; font-size: 15px; border-bottom: 1px dashed var(--line);
+    }
+    .simple li:last-child { border-bottom: 0; }
+    .simple span:last-child { color: var(--faint); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+    footer { color: var(--faint); font-size: 13px; padding-top: 8px; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 860px) {
+      .wrap { grid-template-columns: 1fr; gap: 32px; padding: 32px 16px 32px; }
+      aside { position: static; text-align: center; }
+      .avatar { margin: 0 auto; width: 140px; height: 140px; }
+      .links { justify-content: center; }
+    }
+    @media (max-width: 600px) {
+      .pub { grid-template-columns: 1fr; gap: 14px; padding: 14px; }
+      .thumb { width: 100%; aspect-ratio: 16 / 9; }
+      .news li { grid-template-columns: 1fr; gap: 0; }
+      .simple li { flex-direction: column; gap: 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- ================= Sidebar ================= -->
+    <aside>
+      <a href="images/haicheng.jpg"><img class="avatar" src="images/haicheng.jpg" alt="Haicheng Huang"></a>
+      <h1>Haicheng Huang<span class="cn">黄海城</span></h1>
+      <p class="role">
+        <b>Ph.D. Student</b><br>
+        Information, Risk, and Operations Management<br>
+        McCombs School of Business<br>
+        The University of Texas at Austin
+      </p>
+      <div class="links">
+        <a href="mailto:Haicheng.Huang@utexas.edu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>Email</a>
+        <a href="https://github.com/xiaofeixiang233">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2c-3.2.7-3.880-1.37-3.88-1.37-.53-1.33-1.29-1.69-1.29-1.69-1.050-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.050.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a>
+        <a href="https://www.linkedin.com/in/海城-黄-84a27b339/">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.850 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
+      </div>
+    </aside>
+
+    <!-- ================= Main ================= -->
+    <main>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a first-year Ph.D. student in Information, Risk, and Operations Management (IROM) at the
+          <a href="https://www.mccombs.utexas.edu/">McCombs School of Business</a>,
+          <a href="https://www.utexas.edu">The University of Texas at Austin</a>, advised by
+          Prof. <a href="https://mingyuanzhou.github.io">Mingyuan Zhou</a>.
+        </p>
+        <p>
+          I received my B.S. in Information Engineering from
+          <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> in 2026, where I worked with
+          Prof. <a href="https://sunarker.github.io">Jiangchao Yao</a>. During my undergraduate studies, I was also fortunate to work
+          remotely with Prof. <a href="https://mingyuanzhou.github.io">Mingyuan Zhou</a> and
+          <a href="https://scholar.google.com/citations?hl=zh-CN&user=Vl5wCXsAAAAJ">Huangjie Zheng</a> at UT Austin.
+        </p>
+        <p style="margin-top:16px">My research interests lie in <b>generative models</b>, especially <b>diffusion models</b>, and <b>representation learning</b>. I want to explore:</p>
+        <ul class="interests">
+          <li>How generative models, especially diffusion and autoregressive models, can achieve better and faster performance in various downstream tasks;</li>
+          <li>How synthetic data produced by generative models, or the representations they learn, can assist representation learning.</li>
+        </ul>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news">
+          <li><time>Fall 2026</time><span>Serving as a Teaching Assistant for <em>Data Science for Business Applications</em> at UT Austin.</span></li>
+          <li><time>Aug 2026</time><span>Started my Ph.D. in IROM at <a href="https://www.utexas.edu">UT Austin</a>, advised by Prof. <a href="https://mingyuanzhou.github.io">Mingyuan Zhou</a>.</span></li>
+          <li><time>Jun 2026</time><span>Graduated from <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> as an Outstanding Graduate.</span></li>
+          <li><time>Jan 2026</time><span><a href="https://arxiv.org/abs/2507.18578">WINO</a> is accepted by <b>ICLR 2026</b>.</span></li>
+          <li><time>Sep 2025</time><span><a href="https://neurips.cc/virtual/2025/poster/116854">DAR-GDA</a> is accepted by <b>NeurIPS 2025</b>.</span></li>
+          <li><time>Sep 2025</time><span><a href="https://arxiv.org/abs/2507.18578">WINO</a> is accepted by the NeurIPS 2025 Workshop on Efficient Reasoning as a <b>Spotlight</b>.</span></li>
+          <li><time>May 2025</time><span>Started research internship at <a href="https://cmic.sjtu.edu.cn/CN/Default.aspx">CMIC</a>, Shanghai Jiao Tong University.</span></li>
+          <li><time>Jul 2024</time><span>Started remote research internship at <a href="https://www.utexas.edu">UT Austin</a>.</span></li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="note">* denotes equal contribution</p>
+
+        <div class="pub">
+          <div class="thumb"><span class="ph">BLaDe</span></div>
+          <div>
+            <div class="pub-title">Bayesian Language Decision: Looking Back and Planning Ahead</div>
+            <div class="authors">
+              <span class="me">Haicheng Huang*</span>, Lang Lin*, Xinyang Liu*, Yanbo Wang, Tianyu Chen,
+              <a href="https://ruyianry.github.io">Ruyi An</a>,
+              <a href="https://mingyuanzhou.github.io">Mingyuan Zhou</a>
+            </div>
+            <div class="venue"><span class="badge">Preprint</span><span class="badge alt">2026</span></div>
+            <p class="tldr">A training-free framework that pairs a fast System I actor with a System II planner by treating each decision as Bayesian inference over actions — recent history forms the prior and the planned future serves as evidence. Across three actors and four interactive benchmarks, BLaDe raises average success from 14.76% to 40.38% without updating the actor.</p>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="thumb"><img src="images/wino.png" alt="WINO overview"></div>
+          <div>
+            <div class="pub-title"><a href="https://arxiv.org/abs/2507.18578">Wide-In, Narrow-Out: Revokable Decoding for Efficient and Effective DLLMs</a></div>
+            <div class="authors">
+              <a href="https://feng-hong.github.io/research/">Feng Hong</a>*,
+              <a href="https://scholar.google.com/citations?hl=en&user=SNp2hXIAAAAJ">Geng Yu</a>*,
+              Yushi Ye, <span class="me">Haicheng Huang</span>,
+              <a href="https://scholar.google.com/citations?user=Vl5wCXsAAAAJ&hl=zh-CN&oi=ao">Huangjie Zheng</a>,
+              <a href="https://annzhanglion.github.io">Ya Zhang</a>, Yanfeng Wang,
+              <a href="https://sunarker.github.io">Jiangchao Yao</a>
+            </div>
+            <div class="venue">
+              <span class="badge">ICLR 2026</span>
+              <span class="badge hl">NeurIPS 2025 Workshop · Spotlight</span>
+            </div>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2507.18578">arXiv</a></div>
+            <p class="tldr">A training-free decoding algorithm that enables revokable decoding in DLLMs: it aggressively drafts multiple tokens in parallel while using the model's bidirectional context to verify and re-mask suspicious ones for refinement.</p>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="thumb"><img src="images/DAR.png" alt="DAR-GDA overview"></div>
+          <div>
+            <div class="pub-title"><a href="https://neurips.cc/virtual/2025/poster/116854">Generative Data Augmentation via Diffusion Distillation, Adversarial Alignment, and Importance Reweighting</a></div>
+            <div class="authors">
+              <a href="https://ruyianry.github.io">Ruyi An</a>*, <span class="me">Haicheng Huang*</span>,
+              <a href="https://scholar.google.com/citations?user=Vl5wCXsAAAAJ&hl=zh-CN&oi=ao">Huangjie Zheng</a>,
+              <a href="https://mingyuanzhou.github.io">Mingyuan Zhou</a>
+            </div>
+            <div class="venue"><span class="badge">NeurIPS 2025</span></div>
+            <div class="pub-links"><a href="https://neurips.cc/virtual/2025/poster/116854">Paper</a></div>
+            <p class="tldr">DAR-GDA unites model <b>D</b>istillation, <b>A</b>dversarial alignment, and importance <b>R</b>eweighting to make diffusion-quality augmentation both fast and optimized for downstream learning, matching or exceeding large web-pretrained text-to-image models while using only in-domain data.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <ul class="simple">
+          <li><span>Teaching Assistant, <em>Data Science for Business Applications</em>, UT Austin</span><span>Fall 2026</span></li>
+        </ul>
+      </section>
+
+      <section id="honors">
+        <h2>Honors &amp; Awards</h2>
+        <ul class="simple">
+          <li><span>Outstanding Graduate, Shanghai Jiao Tong University</span><span>2026</span></li>
+          <li><span>Silver Award, Sheng Xuanhuai Cup, Shanghai Jiao Tong University</span><span>2024</span></li>
+          <li><span>C-class Excellence Scholarship, Shanghai Jiao Tong University</span><span>2024</span></li>
+          <li><span>Third Prize, National College Students Mathematical Contest in Modeling (Shanghai)</span><span>2023</span></li>
+        </ul>
+      </section>
+
+      <footer>Last updated: November 2026</footer>
+    </main>
+  </div>
+</body>
 </html>
